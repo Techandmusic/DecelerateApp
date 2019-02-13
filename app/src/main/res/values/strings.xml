@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DecelerateAnxietyManager2</string>
+    <string name="empty_solutions">No solutions in list</string>
 </resources>

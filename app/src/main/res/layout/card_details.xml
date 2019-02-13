@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/card_name"
+        style="@style/detail_style" />
+
+    <ListView
+        android:id="@+id/solutions_list"
+        style="@style/list_style"/>
+
+</LinearLayout>
