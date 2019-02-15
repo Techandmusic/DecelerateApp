@@ -27,13 +27,14 @@ public class CardAdapter extends ListAdapter<Card, CardAdapter.CardHolder>
         @Override
         public boolean areItemsTheSame(@NonNull Card oldItem, @NonNull Card newItem)
         {
-            return false;
+            return oldItem == newItem;
         }
 
         @Override
         public boolean areContentsTheSame(@NonNull Card oldItem, @NonNull Card newItem)
         {
-            return false;
+            return oldItem.getCardName().equals(newItem.getCardName()) &&
+                    oldItem.getCardExtras().equals(newItem.getCardExtras());
         }
     };
 
