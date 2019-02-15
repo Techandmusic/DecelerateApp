@@ -24,4 +24,19 @@
         <item name="android:layout_marginRight">@dimen/standard_spacing</item>
     </style>
 
+    <style name="recycler_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/standard_spacing</item>
+        <item name="android:layout_marginRight">@dimen/standard_spacing</item>
+        <item name="android:layout_marginTop">@dimen/small_spacing</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/standard_spacing</item>
+        <item name="android:layout_marginRight">@dimen/standard_spacing</item>
+    </style>
+
 </resources>
