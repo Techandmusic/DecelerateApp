@@ -23,4 +23,14 @@ public abstract class Card
     {
         this.cardName = cardName;
     }
+
+    public void addExtras(String listItem)
+    {
+        cardExtras.add(listItem);
+    }
+
+    public void removeExtra(int index)
+    {
+        cardExtras.remove(index);
+    }
 }
