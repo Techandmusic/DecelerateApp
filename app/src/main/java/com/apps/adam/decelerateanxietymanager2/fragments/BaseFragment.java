@@ -26,6 +26,11 @@ public abstract class BaseFragment extends Fragment
     private CardViewModel cardViewModel;
     private String bookName;
 
+    public void setBookName(String bookName)
+    {
+        this.bookName = bookName;
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
