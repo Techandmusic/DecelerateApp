@@ -18,11 +18,11 @@ public class AddCard extends AppCompatActivity
         Intent intent = getIntent();
         String titleString = intent.getStringExtra("cardType");
         if (titleString == "Concerns") {
-            titleText.setText("Add Concern");
+            titleText.setText(R.string.concerns_title);
         } else if (titleString == "Gratitude") {
-            titleText.setText("Add Gratitude");
+            titleText.setText(R.string.gratitude_title);
         } else {
-            titleText.setText("Add Belief");
+            titleText.setText(R.string.belief_title);
         }
 
 
