@@ -1,6 +1,8 @@
 package com.apps.adam.decelerateanxietymanager2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,5 +14,20 @@ public class AddCard extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_card);
+        TextView titleText = findViewById(R.id.new_card_title);
+        Intent intent = getIntent();
+        String titleString = intent.getStringExtra("cardType");
+        if (titleString == "Concerns") {
+            titleText.setText("Add Concern");
+        } else if (titleString == "Gratitude") {
+            titleText.setText("Add Gratitude");
+        } else {
+            titleText.setText("Add Belief");
+        }
+
+
+
+
+
     }
 }
