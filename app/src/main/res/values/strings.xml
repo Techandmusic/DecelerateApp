@@ -4,4 +4,5 @@
     <string name="concerns_title">Add Concern</string>
     <string name="gratitude_title">Add Gratitude</string>
     <string name="belief_title">Add Belief</string>
+    <string name="add_card_button">Add Item</string>
 </resources>

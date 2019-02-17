@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/standard_spacing"
         android:layout_below="@+id/add_card_input"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_card_button"/>
 
 
 
