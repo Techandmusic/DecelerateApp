@@ -5,4 +5,6 @@
     <string name="gratitude_title">Add Gratitude</string>
     <string name="belief_title">Add Belief</string>
     <string name="add_card_button">Add Item</string>
+    <string name="empty_concern_list">Use + button to add new concern</string>
+    <string name="empty_gratitude_list">Use + button to add new gratitude item</string>
 </resources>
