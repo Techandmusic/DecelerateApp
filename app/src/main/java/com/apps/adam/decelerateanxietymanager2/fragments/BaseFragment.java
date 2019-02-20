@@ -56,6 +56,7 @@ public abstract class BaseFragment extends Fragment
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
+        FAB = view.findViewById(R.id.add_card_button);
         final CardAdapter adapter = new CardAdapter();
         recyclerView.setAdapter(adapter);
         cardViewModel = ViewModelProviders.of(this).get(CardViewModel.class);

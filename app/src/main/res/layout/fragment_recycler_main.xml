@@ -13,7 +13,7 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_card_button"
         style="@style/button_style"
-        android:src="drawable/ic_add"
+        android:src="@drawable/ic_add_circle_black_24dp"
         android:layout_gravity="bottom|end"/>
 
 

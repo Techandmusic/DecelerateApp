@@ -2,6 +2,7 @@ package com.apps.adam.decelerateanxietymanager2.data;
 
 import com.apps.adam.decelerateanxietymanager2.cards.Card;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import androidx.lifecycle.LiveData;
@@ -47,9 +48,9 @@ public class CardDatabase extends Paper implements DataAccess
     @Override
     public LiveData<List<Card>> getAllCards(String bookName)
     {
-        allCards = (LiveData<List<Card>>) Paper.book().getAllKeys();
+        allCards = Paper.book().read(bookName);
         return allCards;
     }
 
-
+//TODO evaluate options of trying to create LiveData from List, or migrating to room with type conversion
 }

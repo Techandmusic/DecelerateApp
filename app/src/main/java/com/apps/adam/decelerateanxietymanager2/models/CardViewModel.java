@@ -13,15 +13,17 @@ public class CardViewModel extends ViewModel implements DataAccess
 {
     private Repository repository;
 
-    private LiveData<List<Card>> allCards;
+    private LiveData<List<Card>> liveCards;
 
     private String bookName;
+
+    private LiveData<List<Card>> allCards;
 
     public CardViewModel(String bookName)
     {
         this.bookName = bookName;
         repository = new Repository(bookName);
-        allCards = repository.getAllCards(bookName);
+
     }
 
     @Override
